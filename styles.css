@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #121212; /* Darker background for better contrast */
+    color: #ffffff; /* White text */
+    overflow-x: hidden;
+}
+
+header {
+    background: linear-gradient(135deg, #6a0dad, #00b894); /* Dark neon gradient */
+    color: #ffffff;
+    padding: 100px 20px; /* Increased padding for spacious look */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 3.5em; /* Slightly smaller for balance */
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+}
+
+header p {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+#about {
+    background: rgba(30, 30, 30, 0.9); /* Semi-transparent dark grey */
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+}
+
+#about p {
+    max-width: 700px;
+    margin: 20px auto;
+    font-size: 1.2em; /* Increased font size for readability */
+}
+
+#portfolio {
+    background-color: #121212; /* Dark background */
+    padding: 60px 20px;
+    text-align: center;
+    margin: 20px;
+}
+
+.portfolio-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px; /* Increased gap between items */
+}
+
+.portfolio-item {
+    background-color: rgba(44, 44, 44, 0.9); /* Semi-transparent grey background */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 15px;
+    transition: transform 0.3s; /* Image scale effect */
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.05); /* Scale image on hover */
+}
+#contact {
+    background: linear-gradient(135deg, #6a0dad, #00b894); /* Dark neon gradient */
+    color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 15px; /* Added rounded corners to the contact section */
+}
+
+.contact-buttons {
+    margin-top: 20px;
+}
+
+.contact-buttons .button {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px; /* Increased padding */
+    background-color: #00b894; /* Neon green */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 30px; /* Increased border radius for softer corners */
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1.2em; /* Increased font size */
+}
+
+.contact-buttons .button:hover {
+    background-color: #009874; /* Darker green on hover */
+    transform: scale(1.05); /* Button scale effect */
+}
+
+footer {
+    background-color: #121212; /* Dark background */
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 1.2em; /* Increased font size */
+}
